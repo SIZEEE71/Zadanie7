@@ -6,36 +6,38 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Car {
 public:
-    void setBrand(const std::string& brand) {
+    void setBrand(const string& brand) {
         brand_ = brand;
     }
 
-    void setModel(const std::string& model) {
+    void setModel(const string& model) {
         model_ = model;
     }
 
-    void setEngine(const std::string& engine) {
+    void setEngine(const string& engine) {
         engine_ = engine;
     }
 
-    void setTransmission(const std::string& transmission) {
+    void setTransmission(const string& transmission) {
         transmission_ = transmission;
     }
 
     void showInfo() const {
-        std::cout << "Samochód: " << brand_ << " " << model_ << "\n";
-        std::cout << "Silnik: " << engine_ << "\n";
-        std::cout << "Skrzynia biegów: " << transmission_ << "\n";
-        std::cout << "------------------------\n";
+        cout << "Samochod: " << brand_ << " " << model_ << "\n";
+        cout << "Silnik: " << engine_ << "\n";
+        cout << "Skrzynia biegow: " << transmission_ << "\n";
+        cout << "------------------------\n";
     }
 
 private:
-    std::string brand_;
-    std::string model_;
-    std::string engine_;
-    std::string transmission_;
+    string brand_;
+    string model_;
+    string engine_;
+    string transmission_;
 };
 
 #endif // CAR_H
