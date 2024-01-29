@@ -12,8 +12,21 @@ int main() {
     director.construct(sportsCarBuilder);
     Car sportsCar = sportsCarBuilder.getResult();
 
+    SportCarBuilder sportCarBuilder;
+    Director director1;
+
+    director1.construct(sportCarBuilder);
+    Car sportCar = sportCarBuilder.getResult();
+    
+
     // Wyświetlenie informacji o zbudowanym samochodzie
     sportsCar.showInfo();
+
+    cout << endl;
+
+    sportCar.showInfo();
+
+    
 
     return 0;
 }
